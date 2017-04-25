@@ -5,7 +5,6 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider   .state('home', {
         url:'/home' ,
         templateUrl: 'HomePage.html',
-
     });
     $stateProvider  .state('create', {
         url:'/create' ,

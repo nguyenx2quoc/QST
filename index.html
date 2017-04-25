@@ -4,24 +4,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
 		<title>SHOP</title>
-
 		<meta name="description" content="overview &amp; stats" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/index.css">
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 	  	<script src="js/bootstrap.min.js"></script>
-
-		<![endif]-->
-
 	</head>
 	<body class="no-skin">
-		<nav style="margin: auto; height: 90px; background: #4267b2" id="navbar" class="navbar navbar-default">
+		<!------header start-------->
+		<nav style="margin: auto; height:auto; background: #4267b2" id="navbar" class="navbar navbar-default">
 			<div class="container-fluid">
-				<div style="margin: auto;%" class="col-lg-1 col-sm-1 col-xs-2">
+				<div style="margin: auto;%" class="col-lg-1">
 					<div class="container-fluid" id="navbar-container">
 						<div class="navbar-header">
 							<a ui-sref="home" class="navbar-brand">
@@ -32,20 +28,113 @@
 						</div>
 					</div><!-- /.navbar-container -->
 				</div>
-
-				<div class="col-lg-8 col-sm-8 col-xs-6">
+				<div class="col-lg-11 col-sm-12 col-md-12 col-xs-12">
 					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="navbar-header">
-							<a style="color: white" class="navbar-brand" ui-sref="home">Trang chủ</a>
+						<div class="col-lg-1 col-sm-2 col-md-2"></div>
+						<div class="col-lg-8 col-sm-7 col-md-7 col-xs-12">
+							<div class="navbar-header">
+								<a style="color: white" class="navbar-brand" ui-sref="home">Trang chủ</a>
+							</div>
+							<div class="navbar-header">
+								<a style="color: white" class="navbar-brand" ui-sref="create">Đăng hàng</a>
+							</div>
 						</div>
-						<div class="navbar-header">
-							<a style="color: white" class="navbar-brand" ui-sref="create">Đăng hàng</a>
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+							<div class="col-sm-6 col-xs-4">
+								<div style="margin-top: 10px">
+									<button class="btn btn-xs" type="button" ui-sref="detail" style="background: #4267b2">
+										<div class="col-sm-2">
+											<img style="color: black;" src="assets/images/avatars/quoc.jpg" class="img-circle" height="24" width="24"/>
+										</div>
+										<div class="col-sm-7">
+											<h6 style="color: white">Quốc</h6>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-4" style="margin-top: 10px">
+								<div class="dropdown" style="margin-top: 5px">
+									<button  class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
+										<span class="fa fa-bell fa-fw"></span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu dropdown-alerts">
+										<li>
+											<a href="#">
+												<div>
+													<i class="fa fa-comment fa-fw"></i> New Comment
+													<span class="pull-right text-muted small">4 minutes ago</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<div>
+													<i class="fa fa-twitter fa-fw"></i> 3 New Followers
+													<span class="pull-right text-muted small">12 minutes ago</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<div>
+													<i class="fa fa-envelope fa-fw"></i> Message Sent
+													<span class="pull-right text-muted small">4 minutes ago</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<div>
+													<i class="fa fa-tasks fa-fw"></i> New Task
+													<span class="pull-right text-muted small">4 minutes ago</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<div>
+													<i class="fa fa-upload fa-fw"></i> Server Rebooted
+													<span class="pull-right text-muted small">4 minutes ago</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a class="text-center" href="#">
+												<strong>See All Alerts</strong>
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-2 col-xs-4" style="margin-top: 10px">
+								<div class="dropdown" style="margin-top: 5px;">
+									<button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
+										<span hover class="fa fa-user fa-fw"></span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a ui-sref="home"><i class="fa fa-user fa-fw"></i> User Profile</a>
+										</li>
+										<li><a ui-sref="home"><i class="fa fa-gear fa-fw"></i> Settings</a>
+										</li>
+										<li class="divider"></li>
+										<li><a ui-sref="home"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-2 col-sm-2 col-xs-2">
-							<div class="dropdown" style="width: 100%">
+						<div class="col-lg-2 col-sm-3 col-md-2 col-xs-12">
+							<div class="dropdown">
 								<select style="background: white" class="btn btn-default" type="button" data-toggle="dropdown">Tất cả
 									<option>
 										Điện thoại
@@ -65,110 +154,27 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-lg-9 col-sm-9 col-xs-7">
-							<input class="form-control input-sm" placeholder="Nhập nội dung tìm kiếm" >
+						<div class="col-lg-7 col-sm-8 col-md-5 col-xs-12">
+							<div class="row">
+								<div class="col-sm-11 col-md-10 col-xs-12">
+									<input class="form-control input-sm" placeholder="Nhập nội dung tìm kiếm" >
+								</div>
+								<div class="col-sm-1 col-md-2 col-xs-12">
+									<button style="margin-top: 3px" type="button" class="btn btn-default btn-xs">
+										<i ui-sref="search" class="fa fa-search"></i>
+									</button>
+								</div>
+							</div>
 						</div>
-						<button style="margin-top: 3px" type="button" class="btn btn-default btn-xs">
-							<i ui-sref="search" class="fa fa-search"></i>
-						</button>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-3 col-xs-4">
-					<div class="col-sm-6">
-						<div style="margin-top: 10px">
-							<button class="btn btn-xs" type="button" ui-sref="detail" style="background: #4267b2">
-								<div class="col-sm-2">
-									<img style="color: black;" src="assets/images/avatars/quoc.jpg" class="img-circle" height="24" width="24"/>
-								</div>
-								<div class="col-sm-7">
-									<h6 style="color: white">Quốc</h6>
-								</div>
-							</button>
-
-						</div>
-					</div>
-					<div class="col-sm-2" style="margin-top: 10px">
-						<div class="dropdown" style="margin-top: 5px">
-							<button  class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
-								<span class="fa fa-bell fa-fw"></span>
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu dropdown-alerts">
-								<li>
-									<a href="#">
-										<div>
-											<i class="fa fa-comment fa-fw"></i> New Comment
-											<span class="pull-right text-muted small">4 minutes ago</span>
-										</div>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">
-										<div>
-											<i class="fa fa-twitter fa-fw"></i> 3 New Followers
-											<span class="pull-right text-muted small">12 minutes ago</span>
-										</div>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">
-										<div>
-											<i class="fa fa-envelope fa-fw"></i> Message Sent
-											<span class="pull-right text-muted small">4 minutes ago</span>
-										</div>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">
-										<div>
-											<i class="fa fa-tasks fa-fw"></i> New Task
-											<span class="pull-right text-muted small">4 minutes ago</span>
-										</div>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">
-										<div>
-											<i class="fa fa-upload fa-fw"></i> Server Rebooted
-											<span class="pull-right text-muted small">4 minutes ago</span>
-										</div>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a class="text-center" href="#">
-										<strong>See All Alerts</strong>
-										<i class="fa fa-angle-right"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2" style="margin-top: 10px">
-						<div class="dropdown" style="margin-top: 5px;">
-							<button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
-								<span hover class="fa fa-user fa-fw"></span>
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a ui-sref="home"><i class="fa fa-user fa-fw"></i> User Profile</a>
-								</li>
-								<li><a ui-sref="home"><i class="fa fa-gear fa-fw"></i> Settings</a>
-								</li>
-								<li class="divider"></li>
-								<li><a ui-sref="home"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+				<div class="col-lg-3">
 				</div>
 			</div>
 		</nav>
+		<!------header end-------->
 
+		<!------main start-------->
 		<div class="main-container ace-save-state" id="main-container">
 			<!--------main-conten start------------>
 			<div ui-view class="main-content">
@@ -176,12 +182,14 @@
 			</div><!-- /.main-content -->
 
 		</div><!-- /.main-container -->
+		<!------main end-------->
+
 		<!--------footer start------------>
 		<div class="footer" style="padding-top: 100px">
-			<div class="col-lg-6 col-sm-6">
+			<div class="col-lg-6 col-md-6 col-sm-2 col-xs-1">
 
 			</div>
-			<div class="col-lg-2 col-sm-2">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 				<div class="row">
 					<b>Liên kết</b>
 				</div>
@@ -208,7 +216,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="col-lg-2 col-sm-2">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
 				<div class="row">
 					<b>Phiên bản di động</b>
 				</div>
@@ -219,25 +227,18 @@
 					IOS
 				</div>
 			</div>
-			<div class="col-lg-2 col-sm-2">
-				<b> © QST 2016</b>
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" >
+				<b>© QST 2016</b>
 			</div>
 		</div>
 		<!--------footer end------------>
+
 		<!-- basic scripts -->
-
-		<!--[if !IE]> -->
 		<script src="assets/js/ace-extra.min.js"></script>
-
-
 		<script src="assets/js/angular.js"></script>
 		<script src="assets/js/angular-ui-router.min.js"></script>
 		<script src="assets/js/angular-cloudinary.js"></script>
 		<script src="assets/js/angular-local-storage.js"></script>
-
 		<script src="js/index.js"></script>
 	</body>
-
-
-
 </html>

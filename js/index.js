@@ -24,3 +24,47 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'Result.html',
     });
 });
+
+var curIndex = 0;
+
+function showImage(images, maxIndex, index) {
+  if (index > maxIndex - 1) {
+    index = index - maxIndex;
+  }
+  if (index < 0) {
+    index = maxIndex + index;
+  }
+  images[index].style.display = "block";
+}
+
+function showSlider(index) {
+  var images = document.getElementsByClassName("sub_container");
+  var maxIndex = images.length;
+
+  if (index > maxIndex - 1) {
+    index = 0;
+  }
+  if (index < 0) {
+    index = maxIndex - 1
+  }
+
+  if (index >=0 && index <= maxIndex - 6) {
+    curIndex = index; 
+    
+    for (i = 0; i < maxIndex; i++) {
+      images[i].style.display = "none";
+    }
+
+    for (i = 0; i < 6; i++) {
+      showImage(images, maxIndex, curIndex + i);
+    }
+  }
+}
+
+function slideBack() {
+  showSlider(curIndex - 1);
+}
+
+function slideNext() {
+  showSlider(curIndex + 1);
+}

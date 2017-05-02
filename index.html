@@ -179,13 +179,75 @@
 			<!--------main-conten start------------>
 			<div ui-view class="main-content">
 
-			</div><!-- /.main-content -->
+				<!--items list start-->
+				<div class="item-list">
+					<div class="row">
+						<!--sort buttons start-->
+						<div class="sort-buttons">
+							<ul class="nav nav-pills nav-stacked col-sm-2">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">Sách</a></li>
+								<li><a href="#">Laptop</a></li>
+								<li><a href="#">Tivi</a></li>
+								<li><a href="#">Điện thoại</a></li>
+								<li><a href="#">Xe máy</a></li>
+								<li><a href="#">Thời trang</a></li>
+								<li><a href="#">Đồ gia dụng</a></li>
+							</ul>
+						</div>
+						<!--sort buttons end-->
 
+						<!--item tabs start-->
+						<div class="item-tabs">
+							<div class="container col-sm-10">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#tab-all">Tất cả</a></li>
+									<li><a data-toggle="tab" href="#tab-hottest">Hot nhất</a></li>
+									<li><a data-toggle="tab" href="#tab-newest">Mới nhất</a></li>
+									<li><a data-toggle="tab" href="#tab-cheapest">Rẻ nhất</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div id="tab-all" class="tab-pane fade in active">
+										<h3>HOME</h3>
+									</div>
+									<div id="tab-hottest" class="tab-pane fade">
+										<h3>Menu 1</h3>
+									</div>
+									<div id="tab-newest" class="tab-pane fade">
+										<h3>Menu 2</h3>
+									</div>
+									<div id="tab-cheapest" class="tab-pane fade">
+										<h3>Menu 3</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--item tabs end-->
+
+						<!--pagination start-->
+						<ul class="pagination">
+							<li><a href="#">«</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">»</a></li>
+						</ul>
+						<!--pagination end-->
+					</div>
+				</div>
+				<!--items list end-->
+
+
+			</div><!-- /.main-content -->
 		</div><!-- /.main-container -->
 		<!------main end-------->
 
 		<!--------footer start------------>
-		<div class="footer" style="padding-top: 100px">
+		<!--<div class="footer" style="padding-top: 100px">
 			<div class="col-lg-6 col-md-6 col-sm-2 col-xs-1">
 
 			</div>
@@ -230,7 +292,7 @@
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" >
 				<b>© QST 2016</b>
 			</div>
-		</div>
+		</div>-->
 		<!--------footer end------------>
 
 		<!-- basic scripts -->

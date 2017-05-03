@@ -1,7 +1,169 @@
+<style>
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 100%;
+		margin: auto;
+		height: 300px;
+	}
+	.arrow {
+		padding: 100px 0 100px 0;
+		width: 50px;
+		font-size: 30px;
+	}
+	.arrow:hover {
+		background: #d3d3d3;
+	}
+	.sub_container {
+		margin-bottom: 10px;
+	}
+	.image {
+		width: 100%;
+	}
+	.name {
+		margin: 3px 10px 3px 10px;
+		line-height: 1em;
+		height: 2em;
+		font-size: 13px;
+	}
+	.price {
+		margin: 3px 10px 3px 10px;
+		color: red;
+		font-weight: bold;
+		font-size: 15px;
+	}
+</style>
 <div ui-view>
     <!---------Viết code trong này--------------->
+<!-- dvertise ment -->
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-Dây là trang chủ
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
 
+			<div class="carousel-inner" role="listbox">
+				<!-- advertisement_image_00.jpg -->
+				<div class="item active">
+					<a href="#">
+						<img src="assets/images/index-advertisement/advertisement_image_00.jpg">
+					</a>
+				</div>
+				<!-- advertisement_image_01.jpg -->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/index-advertisement/advertisement_image_01.jpg">
+					</a>
+				</div>
+				<!-- advertisement_image_02.jpg -->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/index-advertisement/advertisement_image_02.jpg">
+					</a>
+				</div>
+				<!-- advertisement_image_03.jpg -->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/index-advertisement/advertisement_image_03.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- recommend -->
+	<div class="container">
+		<h2>Gợi ý cho bạn</h2>
+	</div>
+	<div>
+		<!-- back -->
+		<div style="float: left;">
+			<div class="arrow" style="float: left;" onclick="slideBack()">
+				<center>&#10094;</center>
+			</div>
+		</div>
+		<!-- next -->
+		<div style="float: right;">
+			<div class="arrow" style="float: right;" onclick="slideNext()">
+				<center>&#10095;</center>
+			</div>
+		</div>
 
+		<div class="container">
+			<!-- image/recommend_image_00.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_00.jpg" class="image"></center>
+				<div class="name">00 - Sony XPeria XA - F3116</div>
+				<div class="price">3.900.000 d</div>
+			</div>
+			<!-- image/recommend_image_01.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_01.jpg" class="image"></center>
+				<div class="name">01 - Asus Zenfone Max ZC550KL</div>
+				<div class="price">2.788.000 d</div>
+			</div>
+			<!-- image/recommend_image_02.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_02.jpg" class="image"></center>
+				<div class="name">02 - Samsung Galaxy J7 Prime</div>
+				<div class="price">5.090.000 d</div>
+			</div>
+			<!-- image/recommend_image_03.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_03.jpg" class="image"></center>
+				<div class="name">03 - Samsung Galaxy A5 2017</div>
+				<div class="price">8.490.000 d</div>
+			</div>
+			<!-- image/recommend_image_04.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_04.jpg" class="image"></center>
+				<div class="name">04 - Samsung Galaxy S8</div>
+				<div class="price">18.490.000 d</div>
+			</div>
+			<!-- image/recommend_image_05.jpg -->
+			<div class="col-md-2 sub_container">
+				<center><img src="assets/images/index-recommend/recommend_image_05.jpg" class="image"></center>
+				<div class="name">05 - iPhone 7S 128GB</div>
+				<div class="price">23.400.000 d</div>
+			</div>
+			<!-- image/recommend_image_06.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_06.jpg" class="image"></center>
+				<div class="name">06 - Samsung Galaxy A3(2017)</div>
+				<div class="price">6.490.000 d</div>
+			</div>
+			<!-- image/recommend_image_07.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_07.jpg" class="image"></center>
+				<div class="name">07 - Samsung Galaxy J5 Prime</div>
+				<div class="price">4.890.000 d</div>
+			</div>
+			<!-- image/recommend_image_08.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_08.jpg" class="image"></center>
+				<div class="name">08 - Samsung Galaxy A3(2017)</div>
+				<div class="price">6.490.000 d</div>
+			</div>
+			<!-- image/recommend_image_09.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_09.jpg" class="image"></center>
+				<div class="name">09 - Samsung Galaxy J5 Prime</div>
+				<div class="price">6.490.000 d</div>
+			</div>
+			<!-- image/recommend_image_10.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_10.jpg" class="image"></center>
+				<div class="name">10 - OPPO F1s 2017</div>
+				<div class="price">5.950.000 d</div>
+			</div>
+			<!-- image/recommend_image_11.jpg -->
+			<div class="col-md-2 sub_container" style="display: none;">
+				<center><img src="assets/images/index-recommend/recommend_image_11.jpg" class="image"><center>
+				<div class="name">11 - Sony Xperia M5 Single - Vang</div>
+				<div class="price">5.990.000</div>
+			</div>
+		</div>
+	</div>
 </div>

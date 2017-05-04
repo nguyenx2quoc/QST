@@ -10,13 +10,14 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 	  	<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body class="no-skin">
 		<!------header start-------->
-		<nav style="margin: auto; height:auto; background: #4267b2" id="navbar" class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
+		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+			<div class="header container-fluid">
                 <div class="row">
                     <!--Logo area-->
                     <div style="margin: auto;%" class="col-sm-2">
@@ -32,19 +33,19 @@
                     </div>
 
                     <!--Search area-->
-                    <div class="container col-sm-8">
+                    <div class="search_area container col-sm-8">
                         <!--Navigation menu-->
                         <div class="row">
-                            <div class="navbar-header">
-                                <a style="color: white" class="navbar-brand" ui-sref="home">Trang chủ</a>
+                            <div class="navbar_button box curmudgeon">
+                                <a ui-sref="home">TRANG CHỦ</a>
                             </div>
-                            <div class="navbar-header">
-                                <a style="color: white" class="navbar-brand" ui-sref="create">Đăng hàng</a>
+                            <div class="navbar_button">
+                                <a ui-sref="create">ĐĂNG HÀNG</a>
                             </div>
                         </div>
 
                         <!--Search box-->
-                        <div class="row">
+                        <div class="search_box row">
                             <div class="container-fluid col-sm-8">
                                 <div class="row">
                                     <div>
@@ -79,7 +80,7 @@
                     </div>
 
                     <!--User area-->
-                    <div class="container col-sm-2">
+                    <div class="user_area container col-sm-2">
                         <div class="col-sm-6 col-xs-4">
                             <div style="margin-top: 10px">
                                 <button class="btn btn-xs" type="button" ui-sref="detail" style="background: #4267b2">

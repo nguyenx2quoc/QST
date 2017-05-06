@@ -1,26 +1,46 @@
-.dropdown-toggle:hover{
-    color: white;
-}
 body{
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
 }
-/*Effect*/
 
-/*Effect end*/
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
 
+/*HEADER */
 #navbar {
     margin: auto;
-    background: rgb(48, 48, 48);
-    height: auto;
+    background: #303030;
 }
 
 .header {
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.logo_area {
+    font-family: "Leckerli One", cursive;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+}
+
+.logo_area a {
+    color: #d0d0d0;
+    font-size: 45px;
+    align-self: flex-end;
+}
+
+.logo_area a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .navbar_button {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
     font-weight: 100;
     font-size: 15px;
 }
@@ -29,47 +49,33 @@ body{
     color: #d0d0d0;
 }
 
-/*.navbar_button a:hover {
-    color: white;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    border-bottom-width: 1px;
-}*/
-
 .navbar_button a:hover {
     text-decoration: none;
 }
 
 .search_box {
-    margin-top: 10px;
+    margin-top: 4px;
 }
-
-#main-container {
-    margin-top: 100px;
-}
-
-
-
 
 .box {
     position:relative;
     vertical-align: middle;
-    /*color: #0b7;*/
     display: inline-block;
     height: 30px;
     line-height: 30px;
     text-align: center;
     transition: 0.5s;
     cursor: pointer;
-    /*border: 2px solid #0b7;*/
     -webkit-transition:0.5s;
 }
 
 .box:hover {
-    /*border: 2px solid rgba(0,160,80,0);*/
     color: #FFF;
     text-decoration: none;
+}
+
+.box:hover > a {
+    color: #FFF;
 }
 
 .box::before, .box::after {
@@ -104,3 +110,114 @@ body{
     -webkit-transform: scale(1);
     text-decoration: none;
 }
+
+.user_area {
+    display: flex;
+}
+
+.user_area > div {
+    align-self: flex-end;
+}
+
+.user_name {
+    display: inline-block;
+}
+
+.user_name div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.user_settings {
+    display: inline-block;
+}
+
+.user_notification {
+    display: inline-block;
+}
+
+#sort_filter_button, .dropdown-menu, #search_panel, #search_button{
+    background: #303030;
+    color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+}
+
+#sort_filter_button:hover, #search_button:hover {
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    color: #d0d0d0;
+}
+
+.dropdown-menu > li > a:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+.user_settings > .dropdown-toggle {
+    background: #303030;
+    color: #d0d0d0;
+}
+
+.user_settings > .dropdown-toggle:hover {
+    color: white;
+}
+
+.user_notification > .dropdown > .dropdown-toggle {
+    background: #303030;
+    color: #d0d0d0;
+}
+
+.user_notification > .dropdown > .dropdown-toggle:hover {
+    color: white;
+}
+/*HEADER end*/
+
+
+/*MAIN CONTAINER*/
+#main-container {
+    margin-top: 105px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 300px;
+}
+.arrow {
+    padding: 100px 0 100px 0;
+    width: 50px;
+    font-size: 30px;
+}
+.arrow:hover {
+    background: #d3d3d3;
+}
+.sub_container {
+    margin-bottom: 10px;
+}
+
+.sub_container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.image {
+    width: 100%;
+}
+.name {
+    margin: 3px 10px 3px 10px;
+    line-height: 1em;
+    height: 2em;
+    font-size: 13px;
+}
+.price {
+    margin: 3px 10px 3px 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*MAIN CONTAINER end*/
+
+
+

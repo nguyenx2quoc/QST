@@ -179,7 +179,7 @@ body{
 /*MAIN CONTAINER*/
 #main-container {
     margin-top: 77px;
-    height: 1500px; /*Làm xong thì bỏ dòng này*/
+    height: 1290px;
 }
 
 .carousel-inner > .item > img,
@@ -200,7 +200,7 @@ body{
     cursor: pointer;
 }
 .sub_container {
-    margin-bottom: 10px;
+    margin-top: 13px;
 }
 
 .sub_container:hover {
@@ -213,8 +213,8 @@ body{
     cursor: pointer;
 }
 .image {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
 }
 
 .name {
@@ -262,12 +262,21 @@ body{
     color: #303030;
 }
 
+.page_navigation {
+    width: 50%;
+    margin: 30px auto 100px auto;
+}
+
+ul.pagination {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
 .pagination > li > a {
     color: #303030;
     cursor: pointer;
 }
-
-
 /*FOOTER*/
 .footer {
     background-color: #1B1F23;
@@ -310,6 +319,7 @@ body{
     background-color: white;
     color: #303030;
     border: 1px solid #303030;
+    margin: auto auto 20px auto;
 }
 
 /*EFFECTS*/

@@ -1,289 +1,274 @@
 <script src="js/create_item.js"></script>
-<style type="text/css">
-    .uploaded_image_container {
-        margin-bottom: 20px;
-        border: 1px solid white;
-        text-align: center;
-    }
-    .uploaded_image_container img {
-        width: 50%;
-    }
-    .sub_row {
-        margin-bottom: 10px;
-    }
-    .title {
-        font-weight: bold;
-    }
-</style>
 
 <div ui-view>
     <!---------Viết code trong này--------------->
+    <div class="create_item_container">
+        <div class="container container_01">
+            <h2>Bước 01: Chọn hình ảnh</h2>
 
-    <div class="container container_01">
-        <h2>Bước 01: Chọn hình ảnh</h2>
-
-        <!-- upload & select image -->
-        <div class="container">
-            <!-- uploaded image -->
-            <div class="col-sm-2">
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+            <!-- upload & select image -->
+            <div class="container">
+                <!-- uploaded image -->
+                <div class="col-sm-2">
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_01.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_02.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_03.jpg">
+                    </div>
                 </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_01.jpg">
-                </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_02.jpg">
-                </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_03.jpg">
+                <!-- selected image -->
+                <div class="col-sm-4">
+                    <div class="selected_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                    </div>
                 </div>
             </div>
-            <!-- selected image -->
-            <div class="col-sm-4">
-                <div class="selected_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+
+            <!-- upload $ next button -->
+            <div class="container">
+                <div class="col-sm-3">
+                    <div style="float: left;">
+                        <button type="file" class="btn btn-primary create_item_button hvr-fade container_01_upload">
+                            CHỌN HÌNH
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div style="float: right;">
+                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_01_next">
+                            TIẾP THEO
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- upload $ next button -->
-        <div class="container">
-            <div class="col-sm-3">
-                <div style="float: left;">
-                    <button type="file" class="btn btn-primary container_01_upload">
-                        CHỌN HÌNH
-                    </button>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div style="float: right;">
-                    <button type="button" class="btn btn-primary container_01_next">
-                        TIẾP THEO
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container container_02" style="display: none;">
-        <h2>Bước 02: Điền thông tin sản phẩm</h2>
-
-        <!-- form -->
-        <div class="container">
-            <div class="col-sm-6">
-                <form class="form-horizontal">
-                    <!-- ten san pham -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Tên sản phẩm:
-                        </label>
-                        <div class="col-sm-9">
-                            <input class="form-control" placeholder="Nhập tên sản phẩm">
-                        </div>
-                    </div>
-                    <!-- gia san pham -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Giá sản phẩm:
-                        </label>
-                        <div class="col-sm-9">
-                            <input type="number" class="form-control" placeholder="Nhập giá sản phẩm">
-                        </div>
-                    </div>
-                    <!-- tinh trang -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Tình trạng:
-                        </label>
-                        <div class="col-sm-9">
-                            <select class="form-control">
-                                <option>Mới</option>
-                                <option>Cũ</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- so luong -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Số lượng:
-                        </label>
-                        <div class="col-sm-9">
-                            <input type="number" class="form-control" placeholder="Số lượng">
-                        </div>
-                    </div>
-                    <!-- dia chi -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Địa chỉ:
-                        </label>
-                        <div class="col-sm-9">
-                            <input class="form-control" placeholder="Địa chỉ">
-                        </div>
-                    </div>
-                    <!-- tinh / thanh pho -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">
-                            Tỉnh/TP:
-                        </label>
-                        <div class="col-sm-9">
-                            <select class="form-control">
-                                <option>TP Hồ Chí Minh</option>
-                                <option>Hà Nội</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- mo ta san pham -->
-                    <div class="form-group">
-                        <label class="control-label col-sm-3">Mô tả sản phẩm:</label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" rows="5" placeholder="Mô tả sản phẩm"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- back & next button -->
-        <div class="container">
-            <div class="col-sm-3">
-                <div style="float: left;">
-                    <button type="button" class="btn btn-primary container_02_back">
-                        QUAY LẠI
-                    </button>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div style="float: right;">
-                    <button type="submit" class="btn btn-primary container_02_next">
-                        TIẾP THEO
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container container_03" style="display: none;">
-        <h2>Bước 03: Xác nhận sản phẩm</h2>
-
-        <!-- review -->
-        <div class="container">
-            <!-- uploadd image -->
-            <div class="col-sm-2">
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
-                </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_01.jpg">
-                </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_02.jpg">
-                </div>
-                <div class="uploaded_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_03.jpg">
-                </div>
-            </div>
-
-            <!-- selected image -->
-            <div class="col-sm-4">
-                <div class="selected_image_container">
-                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
-                </div>
-            </div>
+        <div class="container container_02" style="display: none;">
+            <h2>Bước 02: Điền thông tin sản phẩm</h2>
 
             <!-- form -->
-            <div class="col-sm-6">
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Tên người bán: </div>
-                    <div class="col-sm-9">
-                        Lê Tấn Thành
+            <div class="container">
+                <div class="col-sm-6">
+                    <form class="form-horizontal">
+                        <!-- ten san pham -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Tên sản phẩm:
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" placeholder="Nhập tên sản phẩm">
+                            </div>
+                        </div>
+                        <!-- gia san pham -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Giá sản phẩm:
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="number" class="form-control" placeholder="Nhập giá sản phẩm">
+                            </div>
+                        </div>
+                        <!-- tinh trang -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Tình trạng:
+                            </label>
+                            <div class="col-sm-9">
+                                <select class="form-control">
+                                    <option>Mới</option>
+                                    <option>Cũ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- so luong -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Số lượng:
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="number" class="form-control" placeholder="Số lượng">
+                            </div>
+                        </div>
+                        <!-- dia chi -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Địa chỉ:
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" placeholder="Địa chỉ">
+                            </div>
+                        </div>
+                        <!-- tinh / thanh pho -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">
+                                Tỉnh/TP:
+                            </label>
+                            <div class="col-sm-9">
+                                <select class="form-control">
+                                    <option>TP Hồ Chí Minh</option>
+                                    <option>Hà Nội</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- mo ta san pham -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Mô tả sản phẩm:</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" rows="5" placeholder="Mô tả sản phẩm"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- back & next button -->
+            <div class="container">
+                <div class="col-sm-3">
+                    <div style="float: left;">
+                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_02_back">
+                            QUAY LẠI
+                        </button>
                     </div>
                 </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Liên lạc: </div>
-                    <div class="col-sm-9">
-                        <a href="https://www.facebook.com/profile.php?id=100009111665591" target="_blank">Facebook</a>
+                <div class="col-sm-3">
+                    <div style="float: right;">
+                        <button type="submit" class="btn btn-primary create_item_button hvr-fade container_02_next">
+                            TIẾP THEO
+                        </button>
                     </div>
                 </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Số điện thoại: </div>
-                    <div class="col-sm-9">
-                        0987058954
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Tên sản phẩm: </div>
-                    <div class="col-sm-9">
-                        Samsung Galaxy S8
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Giá sản phẩm: </div>
-                    <div class="col-sm-9">
-                        18.490.000
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Tình trạng: </div>
-                    <div class="col-sm-9">
-                        Mới
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Số lượng: </div>
-                    <div class="col-sm-9">
-                        1
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Địa chỉ: </div>
-                    <div class="col-sm-9">
-                        Tiki.vn
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Tỉnh/TP: </div>
-                    <div class="col-sm-9">
-                        TP Hồ Chí Minh
-                    </div>
-                </div>
-
-                <div class="row sub_row">
-                    <div class="col-sm-3 title">Mô tả sản phẩm: </div>
-                    <div class="col-sm-9">
-                        Màn hình rộng: 5.8”<br>
-                        Công nghệ màn hình: Super AMOLED<br>
-                        Hệ điều hành: Android 7.0<br>
-                        RAM: 4 GB<br>
-                        Bộ nhớ trong: 64 GB<br>
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <!-- back $ next button -->
-        <div class="container">
-            <div class="col-sm-3">
-                <div style="float: left;">
-                    <button type="button" class="btn btn-primary container_03_back">
-                        QUAY LẠI
-                    </button>
+        <div class="container container_03" style="display: none;">
+            <h2>Bước 03: Xác nhận sản phẩm</h2>
+
+            <!-- review -->
+            <div class="container">
+                <!-- uploadd image -->
+                <div class="col-sm-2">
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_01.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_02.jpg">
+                    </div>
+                    <div class="uploaded_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_03.jpg">
+                    </div>
+                </div>
+
+                <!-- selected image -->
+                <div class="col-sm-4">
+                    <div class="selected_image_container">
+                        <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                    </div>
+                </div>
+
+                <!-- form -->
+                <div class="col-sm-6">
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Tên người bán: </div>
+                        <div class="col-sm-9">
+                            Nguyễn Nguyên Quốc
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Liên lạc: </div>
+                        <div class="col-sm-9">
+                            <a href="https://www.facebook.com/nguyennguyen.quoc.5" target="_blank">Facebook</a>
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Số điện thoại: </div>
+                        <div class="col-sm-9">
+                            0987058954
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Tên sản phẩm: </div>
+                        <div class="col-sm-9">
+                            Samsung Galaxy S8
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Giá sản phẩm: </div>
+                        <div class="col-sm-9">
+                            18.490.000
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Tình trạng: </div>
+                        <div class="col-sm-9">
+                            Mới
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Số lượng: </div>
+                        <div class="col-sm-9">
+                            1
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Địa chỉ: </div>
+                        <div class="col-sm-9">
+                            Tiki.vn
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Tỉnh/TP: </div>
+                        <div class="col-sm-9">
+                            TP Hồ Chí Minh
+                        </div>
+                    </div>
+
+                    <div class="row sub_row">
+                        <div class="col-sm-3 title">Mô tả sản phẩm: </div>
+                        <div class="col-sm-9">
+                            Màn hình rộng: 5.8”<br>
+                            Công nghệ màn hình: Super AMOLED<br>
+                            Hệ điều hành: Android 7.0<br>
+                            RAM: 4 GB<br>
+                            Bộ nhớ trong: 64 GB<br>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div style="float: right;">
-                    <button type="button" class="btn btn-primary container_03_next">
-                        ĐĂNG SẢN PHẨM
-                    </button>
+
+            <!-- back $ next button -->
+            <div class="container">
+                <div class="col-sm-3">
+                    <div style="float: left;">
+                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_03_back">
+                            QUAY LẠI
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div style="float: right;">
+                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_03_next">
+                            ĐĂNG SẢN PHẨM
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

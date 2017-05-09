@@ -3,173 +3,149 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>SHOP</title>
+		<title>SHOPPY</title>
 		<meta name="description" content="overview &amp; stats" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+        <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 	  	<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body class="no-skin">
 		<!------header start-------->
-		<nav style="margin: auto; height:auto; background: #4267b2" id="navbar" class="navbar navbar-default">
-			<div class="container-fluid">
-				<div style="margin: auto;%" class="col-lg-1">
-					<div class="container-fluid" id="navbar-container">
-						<div class="navbar-header">
-							<a ui-sref="home" class="navbar-brand">
-								<small>
-									LOGO
-								</small>
-							</a>
-						</div>
-					</div><!-- /.navbar-container -->
-				</div>
-				<div class="col-lg-11 col-sm-12 col-md-12 col-xs-12">
-					<div class="row">
-						<div class="col-lg-1 col-sm-2 col-md-2"></div>
-						<div class="col-lg-8 col-sm-7 col-md-7 col-xs-12">
-							<div class="navbar-header">
-								<a style="color: white" class="navbar-brand" ui-sref="home">Trang chủ</a>
-							</div>
-							<div class="navbar-header">
-								<a style="color: white" class="navbar-brand" ui-sref="create">Đăng hàng</a>
-							</div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
-							<div class="col-sm-6 col-xs-4">
-								<div style="margin-top: 10px">
-									<button class="btn btn-xs" type="button" ui-sref="detail" style="background: #4267b2">
-										<div class="col-sm-2">
-											<img style="color: black;" src="assets/images/avatars/quoc.jpg" class="img-circle" height="24" width="24"/>
-										</div>
-										<div class="col-sm-7">
-											<h6 style="color: white">Quốc</h6>
-										</div>
-									</button>
-								</div>
-							</div>
-							<div class="col-sm-2 col-xs-4" style="margin-top: 10px">
-								<div class="dropdown" style="margin-top: 5px">
-									<button  class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
-										<span class="fa fa-bell fa-fw"></span>
-										<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu dropdown-alerts">
-										<li>
-											<a href="#">
-												<div>
-													<i class="fa fa-comment fa-fw"></i> New Comment
-													<span class="pull-right text-muted small">4 minutes ago</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="#">
-												<div>
-													<i class="fa fa-twitter fa-fw"></i> 3 New Followers
-													<span class="pull-right text-muted small">12 minutes ago</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="#">
-												<div>
-													<i class="fa fa-envelope fa-fw"></i> Message Sent
-													<span class="pull-right text-muted small">4 minutes ago</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="#">
-												<div>
-													<i class="fa fa-tasks fa-fw"></i> New Task
-													<span class="pull-right text-muted small">4 minutes ago</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="#">
-												<div>
-													<i class="fa fa-upload fa-fw"></i> Server Rebooted
-													<span class="pull-right text-muted small">4 minutes ago</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a class="text-center" href="#">
-												<strong>See All Alerts</strong>
-												<i class="fa fa-angle-right"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-sm-2 col-xs-4" style="margin-top: 10px">
-								<div class="dropdown" style="margin-top: 5px;">
-									<button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" style="background: #4267b2">
-										<span hover class="fa fa-user fa-fw"></span>
-										<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a ui-sref="home"><i class="fa fa-user fa-fw"></i> User Profile</a>
-										</li>
-										<li><a ui-sref="home"><i class="fa fa-gear fa-fw"></i> Settings</a>
-										</li>
-										<li class="divider"></li>
-										<li><a ui-sref="home"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-2 col-sm-3 col-md-2 col-xs-12">
-							<div class="dropdown">
-								<select style="background: white" class="btn btn-default" type="button" data-toggle="dropdown">Tất cả
-									<option>
-										Điện thoại
-									</option>
-									<option>
-										Laptop
-									</option>
-									<option>
-										Quần áo
-									</option>
-									<option>
-										Giày dép
-									</option>
-									<option>
-										Truyện
-									</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-lg-7 col-sm-8 col-md-5 col-xs-12">
-							<div class="row">
-								<div class="col-sm-11 col-md-10 col-xs-12">
-									<input class="form-control input-sm" placeholder="Nhập nội dung tìm kiếm" >
-								</div>
-								<div class="col-sm-1 col-md-2 col-xs-12">
-									<button style="margin-top: 3px" type="button" class="btn btn-default btn-xs">
-										<i ui-sref="search" class="fa fa-search"></i>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-				</div>
+		<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+			<div class="header row-eq-height">
+                <!--Logo area-->
+                <div class="logo_area col-sm-2"  ui-sref="home">
+                    <a>SHOPPY</a>
+                </div>
+
+                <!--Search area-->
+                <div class="search_area col-sm-8">
+                    <!--Navigation menu-->
+                    <div class="row">
+                        <div class="navbar_button box curmudgeon" ui-sref="home">
+                            <a>TRANG CHỦ</a>
+                        </div>
+                        <div class="navbar_button box curmudgeon" ui-sref="create">
+                            <a>ĐĂNG HÀNG</a>
+                        </div>
+                    </div>
+
+                    <!--Search box-->
+                    <div class="search_box row">
+                        <div class="container-fluid col-sm-9">
+                            <div class="row">
+                                <div class="input-group">
+                                    <!--Sort filter-->
+                                    <div class="input-group-btn search-panel" >
+                                        <!--Sort filter button-->
+                                        <button type="button" class="btn btn-default dropdown-toggle" id="search_filter_button" data-toggle="dropdown" >
+                                            <span id="search_concept">Tất cả</span> <span class="caret"></span>
+                                        </button>
+                                        <!--Sort filter dropdown-->
+                                        <ul class="dropdown-menu" id="sort_filter_dropdown" role="menu">
+                                            <li><a href="#nguoi_dang">Người đăng</a></li>
+                                            <li><a href="#sach">Sách</a></li>
+                                            <li><a href="#laptop">Laptop</a></li>
+                                            <li><a href="#tivi">Tivi</a></li>
+                                            <li><a href="#may_anh">Máy ảnh</a></li>
+                                            <li><a href="#thoi_trang">Thời trang</a></li>
+
+                                            <li class="divider"></li>
+                                            <li><a href="#tat_ca">Tất cả</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <input type="hidden" name="search_param" value="all" id="search_param">
+
+                                    <!--Search panel-->
+                                    <input type="text" class="form-control" id="search_panel" name="x" placeholder="Tìm kiếm" >
+
+                                    <!--Search button-->
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" id="search_button" type="button" >
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--User area-->
+                <div class="user_area col-sm-2">
+                    <div class="row">
+                        <div class="user_name">
+                            <button class="btn btn-xs" type="button" ui-sref="detail" style="background: #303030">
+                                <div>
+                                    <img style="color: black;" src="assets/images/avatars/quoc.jpg" class="img-circle" height="50" width="50"/>
+                                </div>
+                                <div>
+                                    <h6 style="color: #d0d0d0;">Quốc</h6>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="user_settings">
+                            <button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="home"><i class="fa fa-user fa-fw"></i> Thông tin tài khoản</a>
+                                </li>
+                                <li><a ui-sref="home"><i class="fa fa-gear fa-fw"></i> Cài đặt</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a ui-sref="home"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user_notification">
+                            <div class="dropdown">
+                                <button  class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="fa fa-bell fa-fw"></span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul style="margin-top: 20px" class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-comment fa-fw"></i> Bình luận mới
+                                                <span class="pull-right text-muted small">4 phút trước</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i> 3 Người theo dõi
+                                                <span class="pull-right text-muted small">12 phút trước</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> Tin nhắn mới
+                                                <span class="pull-right text-muted small">7 phút trước</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-center" href="#">
+                                            <strong>Xem tất cả</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</nav>
 		<!------header end-------->
@@ -180,57 +156,42 @@
 			<div ui-view class="main-content">
 
 			</div><!-- /.main-content -->
-
 		</div><!-- /.main-container -->
 		<!------main end-------->
 
-		<!--------footer start------------>
-		<div class="footer" style="padding-top: 100px">
-			<div class="col-lg-6 col-md-6 col-sm-2 col-xs-1">
+        <!-------footer start------->
+        <div class="footer container-fluid">
+            <div style="margin-top: 25px">
+                <div class="col-lg-6 col-md-6 col-sm-2 col-xs-1">
 
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-				<div class="row">
-					<b>Liên kết</b>
-				</div>
-				<div class="row">
-					<span class="action-buttons">
-						<a href="https://www.facebook.com/nguyennguyen.quoc.5">
-							<img src="assets/images/gallery/facebook.png" height="24" width="24"/>
-						</a>
-					</span>
-					<span class="action-buttons">
-						<a href="https://www.facebook.com/nguyennguyen.quoc.5">
-							<img src="assets/images/gallery/google.jpg" height="24" width="24"/>
-						</a>
-					</span>
-					<span class="action-buttons">
-						<a href="https://www.facebook.com/nguyennguyen.quoc.5">
-							<img src="assets/images/gallery/intagram.jpg" height="24" width="24"/>
-						</a>
-					</span>
-					<span class="action-buttons">
-						<a href="https://www.facebook.com/nguyennguyen.quoc.5">
-							<img src="assets/images/gallery/twiter.jpg" height="24" width="24"/>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
-				<div class="row">
-					<b>Phiên bản di động</b>
-				</div>
-				<div class="row">
-					Android
-				</div>
-				<div class="row">
-					IOS
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" >
-				<b>© QST 2016</b>
-			</div>
-		</div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                    <div class="row">
+                        <b class="footer_text">Liên kết</b>
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: #D0D0D0; margin-right: 5px"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: #D0D0D0; margin-right: 5px"></i>
+                        <i class="fa fa-google-plus-square fa-2x" aria-hidden="true" style="color: #D0D0D0; margin-right: 5px"></i>
+                        <i class="fa fa-youtube-square fa-2x" aria-hidden="true" style="color: #D0D0D0; margin-right: 5px"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="row">
+                        <b class="footer_text">Phiên bản di động</b>
+                    </div>
+                    <div class="row footer_text">
+                        Android
+                    </div>
+                    <div class="row footer_text">
+                        IOS
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" >
+                    <b class="footer_text">© QST 2016</b>
+                </div>
+            </div>
+        </div>
 		<!--------footer end------------>
 
 		<!-- basic scripts -->

@@ -178,8 +178,7 @@ body{
 
 /*MAIN CONTAINER*/
 #main-container {
-    margin-top: 77px;
-    height: 1290px;
+
 }
 
 .carousel-inner > .item > img,
@@ -280,7 +279,7 @@ ul.pagination {
 /*FOOTER*/
 .footer {
     background-color: #1B1F23;
-    height: 150px;
+    height: 140px;
 }
 
 .footer_text {
@@ -319,7 +318,7 @@ ul.pagination {
     background-color: white;
     color: #303030;
     border: 1px solid #303030;
-    margin: auto auto 20px auto;
+    margin: auto auto 60px auto;
 }
 
 /*EFFECTS*/

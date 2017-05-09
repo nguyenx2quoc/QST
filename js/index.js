@@ -78,3 +78,10 @@ $(document).ready(function(e){
         $('.input-group #search_param').val(param);
     });
 });
+
+var headerHeight = $("#navbar").height();
+$("#main-container").css("margin-top", headerHeight);
+$( window ).resize(function() {
+    var headerHeight = $("#navbar").height();
+    $("#main-container").css("margin-top", headerHeight);
+});

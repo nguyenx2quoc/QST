@@ -206,14 +206,17 @@ body{
     cursor: pointer;
 }
 .sub_item {
-    margin-bottom: 10px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .sub_item:hover {
     cursor: pointer;
 }
 .image {
     width: 140px;
-    height: 140px;
+    height: 200px;
 }
 
 .name {
@@ -387,5 +390,16 @@ ul.pagination {
     color: #D0D0D0 !important;
 }
 
+#btnLoc{
+    width: 50%;
+    margin-left: 35%;
+}
 
+#frmtinhtrang{
+    margin-left: 10%
+}
 
+#searchscreen{
+    margin-left: 20px;
+    margin-bottom: 500px
+}

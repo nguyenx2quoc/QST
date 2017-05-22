@@ -1,4 +1,151 @@
 <div ui-view>
-    <!---------Viết code trong này--------------->
-    Đây là trang tìm kiếm
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- advertisement_image_00.jpg -->
+            <div class="item active">
+                <a href="#">
+                    <img src="assets/images/index-advertisement/advertisement_image_00.jpg">
+                </a>
+            </div>
+            <!-- advertisement_image_01.jpg -->
+            <div class="item">
+                <a href="#">
+                    <img src="assets/images/index-advertisement/advertisement_image_01.jpg">
+                </a>
+            </div>
+            <!-- advertisement_image_02.jpg -->
+            <div class="item">
+                <a href="#">
+                    <img src="assets/images/index-advertisement/advertisement_image_02.jpg">
+                </a>
+            </div>
+            <!-- advertisement_image_03.jpg -->
+            <div class="item">
+                <a href="#">
+                    <img src="assets/images/index-advertisement/advertisement_image_03.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="items_all" id="searchscreen">
+        <ul class="items_filter nav nav-pills nav-stacked col-sm-2">
+            <li class="active" id="items_filter_header"><a>Chế độ lọc</a></li>
+            <li><h4>Vị trí</h4>
+                <select class="form-control input-sm" >
+                    <option selected>Tp. HCM</option>
+                    <option>Hà Nội</option>
+                    <option>Đồng Nai</option>
+                    <option>Quản Ninh</option>
+                    <option>Lâm Đồng</option>
+                    <option>Cần Thơ</option>
+                </select>
+            </li>
+            <li><h4>Giá</h4>
+                <div class="row">
+                    <div class="col-xs-2">Từ</div>
+                    <div class="col-xs-10">
+                        <input type="number" class="form-control input-sm">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">Dến</div>
+                    <div class="col-xs-10">
+                        <input type="number" class="form-control input-sm">
+                    </div>
+                </div>
+            </li>
+            <li><h4>Tình trạng</h4>
+                <form action="" id="frmtinhtrang">
+                    <input type="radio" name="gender" value="Mới"> Mới<br>
+                    <input type="radio" name="gender" value="Cũ"> Đã qua sử dụng<br>
+                </form>
+            </li>
+            <li><h4>Đánh giá</h4>
+                DÁNH GIÁ
+            </li>
+            <br>
+            <button class="btn btn-primary create_item_button hvr-fade" id="btnLoc"> Lọc</button>
+        </ul>
+        <div class="tab-content col-sm-10" style="margin-top: 20px">
+            <div id="tab-all" class="tab-pane fade in active">
+                <div class="container-fluid">
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/S6E.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy S6 Edge</div>
+                        <div class="price"> 9.000.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/S7.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy S7</div>
+                        <div class="price">11.900.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/S7E.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy S7 Edge</div>
+                        <div class="price">13.900.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/S8P.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy S8 Plus</div>
+                        <div class="price">20.590.000đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/A9pro.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy A9 Pro</div>
+                        <div class="price">11.900.000 đ</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/list/samsung-smart-J763.jpg" class="image"></center>
+                        <div class="name"> Smart TV (Samsung) - J763</div>
+                        <div class="price">28.900.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/list/samsung-smart-A312.jpg" class="image"></center>
+                        <div class="name"> Smart TV (Samsung) - A312</div>
+                        <div class="price">22.000.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/J7Prime.jpg" class="image"></center>
+                        <div class="name"> Samsung Galaxy J7 Prime</div>
+                        <div class="price">5.090.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/A52017.jpg " class="image"></center>
+                        <div class="name"> Samsung Galaxy A5(2017)</div>
+                        <div class="price">7.900.000 đ</div>
+                    </div>
+                    <div class="col-md-2 sub_item hvr-glow hvr-underline-from-center">
+                        <center><img src="assets/images/samsung/NoteE.jpg " class="image"></center>
+                        <div class="name"> Samsung Galaxy Note Edge</div>
+                        <div class="price">19.900.000 đ</div>
+                    </div>
+                </div>
+            </div>
+            <!--pagination start-->
+            <div class="page_navigation">
+                <ul class="pagination">
+                    <li><a>«</a></li>
+                    <li><a>1</a></li>
+                    <li><a>2</a></li>
+                    <li><a>3</a></li>
+                    <li><a>4</a></li>
+                    <li><a>5</a></li>
+                    <li><a>6</a></li>
+                    <li><a>»</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

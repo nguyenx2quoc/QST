@@ -22,6 +22,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         url:'/search' ,
         templateUrl: 'Result.html',
     });
+    $stateProvider  .state('resultfail', {
+        url:'/error' ,
+        templateUrl: 'ResultFail.html',
+    });
 });
 
 
@@ -84,4 +88,26 @@ $("#main-container").css("margin-top", headerHeight);
 $( window ).resize(function() {
     var headerHeight = $("#navbar").height();
     $("#main-container").css("margin-top", headerHeight);
+});
+
+$("#search_panel").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#search_button").click();
+    }
+});
+
+$("#btnLoc").click(function () {
+    window.location.replace("http://localhost:63342/QST/#/search");
+});
+
+
+$("#search_button").click(function () {
+    var x = $("#search_panel").val();
+    x = x.toLowerCase();
+    if(  x == "samsung" || x == "sam sung"){
+        window.location.replace("http://localhost:63342/QST/#/search");
+    }
+    else {
+        window.location.replace("http://localhost:63342/QST/#/error");
+    }
 });

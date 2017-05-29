@@ -26,6 +26,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         url:'/error' ,
         templateUrl: 'ResultFail.html',
     });
+    $stateProvider  .state('detailitem', {
+        url:'/detailitem' ,
+        templateUrl: 'DetailItem.html',
+    });
 });
 
 

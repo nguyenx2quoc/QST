@@ -435,3 +435,14 @@ label.star:before {
     margin-left: 30px;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.name {
+    color: blue;
+}

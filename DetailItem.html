@@ -1,7 +1,166 @@
+<script src="js/create_item.js"></script>
+<script src="js/details_item.js"></script>
+
 <div ui-view>
     <!---------Viết code trong này--------------->
-Đây là trang chi tiết sản phẩm
+    <div class="container container_03">
+        <h2>Samsung Galaxy S8</h2>
 
+        <!-- review -->
+        <div class="container">
+            <!-- uploadd image -->
+            <div class="col-sm-2">
+                <div class="uploaded_image_container">
+                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                </div>
+                <div class="uploaded_image_container">
+                    <img src="assets/images/create-item-uploaded/upoaded_01.jpg">
+                </div>
+                <div class="uploaded_image_container">
+                    <img src="assets/images/create-item-uploaded/upoaded_02.jpg">
+                </div>
+                <div class="uploaded_image_container">
+                    <img src="assets/images/create-item-uploaded/upoaded_03.jpg">
+                </div>
+            </div>
 
+            <!-- selected image -->
+            <div class="col-sm-4">
+                <div class="selected_image_container">
+                    <img src="assets/images/create-item-uploaded/upoaded_00.jpg">
+                </div>
+            </div>
+
+            <!-- form -->
+            <div class="col-sm-6">
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Tên người bán: </div>
+                    <div class="col-sm-9">
+                        Nguyễn Nguyên Quốc
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Liên lạc: </div>
+                    <div class="col-sm-9">
+                        <a href="https://www.facebook.com/nguyennguyen.quoc.5" target="_blank">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Số điện thoại: </div>
+                    <div class="col-sm-9">
+                        0987058954
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Tên sản phẩm: </div>
+                    <div class="col-sm-9">
+                        Samsung Galaxy S8
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Giá sản phẩm: </div>
+                    <div class="col-sm-9">
+                        18.490.000
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Tình trạng: </div>
+                    <div class="col-sm-9">
+                        Mới
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Số lượng: </div>
+                    <div class="col-sm-9">
+                        1
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Địa chỉ: </div>
+                    <div class="col-sm-9">
+                        Tiki.vn
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Tỉnh/TP: </div>
+                    <div class="col-sm-9">
+                        TP Hồ Chí Minh
+                    </div>
+                </div>
+
+                <div class="row sub_row">
+                    <div class="col-sm-3 title">Mô tả sản phẩm: </div>
+                    <div class="col-sm-9">
+                        Màn hình rộng: 5.8”<br>
+                        Công nghệ màn hình: Super AMOLED<br>
+                        Hệ điều hành: Android 7.0<br>
+                        RAM: 4 GB<br>
+                        Bộ nhớ trong: 64 GB<br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h2>Bình luận</h2>
+
+        <div class="row">
+            <ul>
+                <li>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <img style="color: black;" src="assets/images/avatars/quoc.jpg" height="50" width="50"/>
+                            <span class="name">Quốc</span>
+                        </div>
+                        <div class="col-sm-11">
+                            <textarea class="form-control" placeholder="Text here..." id="comment_content" />
+                            <button class="btn btn-primary" id="comment_button" style="float: right; margin: 10px;">
+                                Đăng
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <ul id="comment_list">
+                <li>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <img style="color: black;" src="assets/images/avatars/quoc.jpg" height="50" width="50"/>
+                            <span class="name">Quốc</span>
+                        </div>
+                        <div class="col-sm-11">
+                            <span>
+                                Thiết kế đẳng cấp, sang trọng Samsung Galaxy S8 có kích thước 5.8 inch với thiết kế màn hình cong không viền tràn vô cực về phía hai cạnh điện thoại, tạo nên bề mặt mượt mà và không bị giới hạn bởi bất kỳ nút bấm hay cạnh màn hình. Thiết kế độc đáo còn thu hẹp kích thước cạnh trên và cạnh dưới cho bạn trải nghiệm hình ảnh sắc nét và sống động. Ngoài ra, mặt kính trong suốt và bằng phẳng bao phủ toàn bộ màn hình, liền mạch với vỏ kim loại nhôm chắc chắn, mang đến sự đẳng cấp cho người sở hữu.
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <img style="color: black;" src="assets/images/avatars/quoc.jpg" height="50" width="50"/>
+                            <span class="name">Quốc</span>
+                        </div>
+                        <div class="col-sm-11">
+                            <span>
+                                Galaxy S8 cho bạn trải nghiệm tuyệt vời và ghi lại những khoảnh khắc đáng nhớ trên nọi nẻo đường với bộ đôi Camera trước 8 MP, sau 12 MP. Bạn có thể thoải mái lưu lại trọn vẹn cảm xúc cùng người thân, bạn bè, gia đình trong những chuyến đi, hay ngày lễ kỷ niệm. Bộ đôi Camera cho hình ảnh sắc nét, màu sắc sống động, chân thực dù bạn chụp ngày hay đêm.
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </div>

@@ -52,7 +52,7 @@ $(document).ready(function(){
     	var container_02 = $(".container_02");
     	var container_03 = $(".container_03");
 		var validate = Validateform();
-		if( !validate){
+		if( validate){
             container_02.slideUp();
             container_03.slideDown();
 		}

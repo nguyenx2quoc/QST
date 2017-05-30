@@ -324,6 +324,13 @@ ul.pagination {
     margin: auto auto 60px auto;
 }
 
+.create_sumbit_button {
+    background-color: white;
+    color: #303030;
+    border: 1px solid #303030;
+    margin: auto auto auto auto;
+}
+
 /*----------- SEARCH RESULT -----------*/
 div.stars {
     display: inline-block;
@@ -445,4 +452,17 @@ li {
 
 .name {
     color: blue;
+}
+
+#Giasp_error{
+    color: red;
+}
+#Tensp_error{
+    color: red;
+}
+#Soluong_error{
+    color: red;
+}
+#Diachi_error{
+    color: red;
 }

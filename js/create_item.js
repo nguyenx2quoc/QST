@@ -1,5 +1,4 @@
 var selected_image_src = "";
-
 $(document).ready(function(){
     $(".uploaded_image_container").hover(			
         function (){
@@ -52,9 +51,11 @@ $(document).ready(function(){
     $(".container_02_next").click(function(){
     	var container_02 = $(".container_02");
     	var container_03 = $(".container_03");
-
-    	container_02.slideUp();
-    	container_03.slideDown();
+		var validate = Validateform();
+		if( !validate){
+            container_02.slideUp();
+            container_03.slideDown();
+		}
     });
 
     $(".container_03_back").click(function(){
@@ -64,8 +65,51 @@ $(document).ready(function(){
     	container_02.slideDown();
     	container_03.slideUp();
     });
+    $("#Co").click( function () {
+		location.reload();
+        window.location.replace("http://localhost:63342/QST/#/home");
+
+    });
 
     $(".container_03_next").click(function(){
 
     });
+    function Validateform() {
+		var Tepsp = $.trim($("#Tensp").val());
+		var Giasp = $.trim($("#Giasp").val());
+        var Soluong = $.trim($("#Soluong").val());
+        var Diachi = $.trim($("#Diachi").val());
+
+        var flag = true;
+
+        if(Tepsp == "" || Tensp.length < 4)
+		{
+			$("#Tensp_error").text("Tên sản phẩm phải nhiều hơn 4 ký tự");
+            flag = false;
+		} else {
+            $("#Tensp_error").text("");
+        }
+        if(Giasp == "" || Giasp.length < 5)
+        {
+            $("#Giasp_error").text("Giá sản phẩm lớn hơn 10k");
+            flag = false;
+        } else {
+            $("#Giasp_error").text("");
+        }
+        if(Soluong == "" || parseInt(Soluong) < 1 )
+        {
+            $("#Soluong_error").text("Số lượng phải lớn hơn 0");
+            flag = false;
+        } else {
+            $("#Soluong_error").text("");
+        }
+        if(Diachi == "" || Diachi.length < 4)
+        {
+            $("#Diachi_error").text("Vui lòng điền địa chỉ");
+            flag = false;
+        } else {
+            $("#Diachi_error").text("");
+        }
+        return flag;
+    }
 });

@@ -1,7 +1,11 @@
 var routerApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/404');
+    $stateProvider   .state('404', {
+        url:'/404' ,
+        templateUrl: 'ErrorPage.html',
+    });
     $stateProvider   .state('home', {
         url:'/home' ,
         templateUrl: 'HomePage.html',
@@ -72,7 +76,7 @@ function slideBack() {
 function slideNext() {
   showSlider(curIndex + 1);
 }
-
+var flg = "1";
 $(document).ready(function(e){
     $('.search-panel .dropdown-menu').find('a').click(function(e) {
         e.preventDefault();
@@ -81,6 +85,10 @@ $(document).ready(function(e){
         $('.search-panel span#search_concept').text(concept);
         $('.input-group #search_param').val(param);
     });
+    if(flg == "2"){
+        location.reload();
+    }
+
 });
 
 var headerHeight = $("#navbar").height();

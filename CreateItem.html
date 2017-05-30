@@ -35,8 +35,10 @@
             <div class="container">
                 <div class="col-sm-3">
                     <div style="float: left;">
-                        <button type="file" class="btn btn-primary create_item_button hvr-fade container_01_upload">
-                            CHỌN HÌNH
+                        <!--<input type="file" class="btn btn-primary create_item_button hvr-fade container_01_upload"
+                                value="CHỌN HÌNH"/>--->
+                        <button class="btn btn-primary create_item_button hvr-fade container_01_upload"
+                                >CHỌN HÌNH
                         </button>
                     </div>
                 </div>
@@ -67,7 +69,8 @@
                                 Tên sản phẩm:
                             </label>
                             <div class="col-sm-9">
-                                <input class="form-control" placeholder="Nhập tên sản phẩm">
+                                <input class="form-control" placeholder="Nhập tên sản phẩm" id="Tensp">
+                                <span id="Tensp_error"></span>
                             </div>
                         </div>
                         <!-- gia san pham -->
@@ -76,7 +79,8 @@
                                 Giá sản phẩm:
                             </label>
                             <div class="col-sm-9">
-                                <input type="number" class="form-control" placeholder="Nhập giá sản phẩm">
+                                <input type="number" class="form-control" placeholder="Nhập giá sản phẩm" id="Giasp">
+                                <span id="Giasp_error"></span>
                             </div>
                         </div>
                         <!-- tinh trang -->
@@ -86,8 +90,8 @@
                             </label>
                             <div class="col-sm-9">
                                 <select class="form-control">
-                                    <option>Mới</option>
-                                    <option>Cũ</option>
+                                    <option value="1" selected>Mới</option>
+                                    <option value="2">Cũ</option>
                                 </select>
                             </div>
                         </div>
@@ -97,7 +101,8 @@
                                 Số lượng:
                             </label>
                             <div class="col-sm-9">
-                                <input type="number" class="form-control" placeholder="Số lượng">
+                                <input type="number" class="form-control" placeholder="Số lượng" id="Soluong">
+                                <span id="Soluong_error"></span>
                             </div>
                         </div>
                         <!-- dia chi -->
@@ -106,7 +111,8 @@
                                 Địa chỉ:
                             </label>
                             <div class="col-sm-9">
-                                <input class="form-control" placeholder="Địa chỉ">
+                                <input class="form-control" placeholder="Địa chỉ" id="Diachi">
+                                <span id="Diachi_error"></span>
                             </div>
                         </div>
                         <!-- tinh / thanh pho -->
@@ -116,8 +122,8 @@
                             </label>
                             <div class="col-sm-9">
                                 <select class="form-control">
-                                    <option>TP Hồ Chí Minh</option>
-                                    <option>Hà Nội</option>
+                                    <option value="1">TP Hồ Chí Minh</option>
+                                    <option value="2">Hà Nội</option>
                                 </select>
                             </div>
                         </div>
@@ -269,7 +275,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div style="float: right;">
-                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_03_next">
+                        <button type="button" class="btn btn-primary create_item_button hvr-fade container_03_next" href="#"
+                                data-toggle="modal" data-target="#myModal">
                             ĐĂNG SẢN PHẨM
                         </button>
                     </div>
@@ -278,3 +285,19 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" style="margin-top: 180px" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width:700px;">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #333;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <center> <h4 class="modal-title" style="color: white;"><strong>BẠN CÓ MUỐN ĐĂNG SẢN PHẨM</strong></h4></center>
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-default create_sumbit_button hvr-fade" data-dismiss="modal" id="Co">Có</button>
+                <button type="button" class="btn btn-default create_sumbit_button hvr-fade" data-dismiss="modal">Đóng</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

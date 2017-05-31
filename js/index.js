@@ -1,7 +1,7 @@
 var routerApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/404');
+    $urlRouterProvider.otherwise('/home');
     $stateProvider   .state('404', {
         url:'/404' ,
         templateUrl: 'ErrorPage.html',

@@ -105,17 +105,24 @@ $("#search_panel").keyup(function(event){
 });
 
 $("#btnLoc").click(function () {
-    window.location.replace("/QST/#/search");
+    var url = window.location.href;
+    var index = url.lastIndexOf("/");
+    url = url.slice(0, index);
+    window.location.replace(url + "search");
 });
 
 
 $("#search_button").click(function () {
     var x = $("#search_panel").val();
     x = x.toLowerCase();
+    var url = window.location.href;
+    var index = url.lastIndexOf("/");
+    url = url.slice(0, index);
     if(  x == "samsung" || x == "sam sung"){
-        window.location.replace("/QST/#/search");
+        
+        window.location.replace(url + "search");
     }
     else {
-        window.location.replace("/QST/#/error");
+        window.location.replace(url + "error");
     }
 });

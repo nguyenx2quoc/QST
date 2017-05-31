@@ -108,7 +108,7 @@ $("#btnLoc").click(function () {
     var url = window.location.href;
     var index = url.lastIndexOf("/");
     url = url.slice(0, index);
-    window.location.replace(url + "search");
+    window.location.replace(url + "/search");
 });
 
 
@@ -120,9 +120,9 @@ $("#search_button").click(function () {
     url = url.slice(0, index);
     if(  x == "samsung" || x == "sam sung"){
         
-        window.location.replace(url + "search");
+        window.location.replace(url + "/search");
     }
     else {
-        window.location.replace(url + "error");
+        window.location.replace(url + "/error");
     }
 });

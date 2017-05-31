@@ -67,7 +67,10 @@ $(document).ready(function(){
     });
     $("#Co").click( function () {
 		location.reload();
-        window.location.replace("http://localhost:63342/QST/#/home");
+	    var url = window.location.href;
+	    var index = url.lastIndexOf("/");
+	    url = url.slice(0, index);
+        window.location.replace(url + "/home");
 
     });
 

@@ -105,7 +105,7 @@ $("#search_panel").keyup(function(event){
 });
 
 $("#btnLoc").click(function () {
-    window.location.replace("http://localhost:63342/QST/#/search");
+    window.location.replace("/QST/#/search");
 });
 
 
@@ -113,9 +113,9 @@ $("#search_button").click(function () {
     var x = $("#search_panel").val();
     x = x.toLowerCase();
     if(  x == "samsung" || x == "sam sung"){
-        window.location.replace("http://localhost:63342/QST/#/search");
+        window.location.replace("/QST/#/search");
     }
     else {
-        window.location.replace("http://localhost:63342/QST/#/error");
+        window.location.replace("/QST/#/error");
     }
 });

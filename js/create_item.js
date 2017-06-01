@@ -111,7 +111,7 @@ $(document).ready(function(){
 	    var url = window.location.href;
 	    var index = url.lastIndexOf("/");
 	    url = url.slice(0, index);
-        window.location.replace(url + "/home");
+        window.location.replace(url + "/detail");
 
     });
 

@@ -89,7 +89,7 @@
                                 Tình trạng:
                             </label>
                             <div class="col-sm-9">
-                                <select class="form-control">
+                                <select class="form-control" id="Tinhtrang">
                                     <option value="1" selected>Mới</option>
                                     <option value="2">Cũ</option>
                                 </select>
@@ -121,9 +121,14 @@
                                 Tỉnh/TP:
                             </label>
                             <div class="col-sm-9">
-                                <select class="form-control">
+                                <select class="form-control" id="Thanhpho" id="Thanhpho">
                                     <option value="1">TP Hồ Chí Minh</option>
                                     <option value="2">Hà Nội</option>
+                                    <option value="3">Đồng Nai</option>
+                                    <option value="4">Bình Dương</option>
+                                    <option value="5">Lâm Đồng</option>
+                                    <option value="6">Khánh Hòa</option>
+                                    <option value="7">Cần Thơ</option>
                                 </select>
                             </div>
                         </div>
@@ -131,7 +136,7 @@
                         <div class="form-group">
                             <label class="control-label col-sm-3" style="text-align: left">Mô tả sản phẩm:</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" rows="5" placeholder="Mô tả sản phẩm"></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Mô tả sản phẩm" id="Mota"></textarea>
                             </div>
                         </div>
                     </form>
@@ -211,42 +216,42 @@
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Tên sản phẩm: </div>
                         <div class="col-sm-9">
-                            Samsung Galaxy S8
+                            <span id="showTensp">Samsung Galaxy S8</span>
                         </div>
                     </div>
 
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Giá sản phẩm: </div>
                         <div class="col-sm-9">
-                            18.490.000
+                            <span id="showGiasp">18.490.000</span>
                         </div>
                     </div>
 
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Tình trạng: </div>
                         <div class="col-sm-9">
-                            Mới
+                            <span id="showTinhtrang"></span>
                         </div>
                     </div>
 
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Số lượng: </div>
                         <div class="col-sm-9">
-                            1
+                            <span id="showSoluong"></span>
                         </div>
                     </div>
 
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Địa chỉ: </div>
                         <div class="col-sm-9">
-                            Tiki.vn
+                            <span id="showDiachi"></span>
                         </div>
                     </div>
 
                     <div class="row sub_row">
                         <div class="col-sm-3 title">Tỉnh/TP: </div>
                         <div class="col-sm-9">
-                            TP Hồ Chí Minh
+                            <span id="showTinhthanh"></span>
                         </div>
                     </div>
 

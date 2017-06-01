@@ -51,10 +51,51 @@ $(document).ready(function(){
     $(".container_02_next").click(function(){
     	var container_02 = $(".container_02");
     	var container_03 = $(".container_03");
-		var validate = Validateform();
+        var Tepsp = $.trim($("#Tensp").val());
+        var Giasp = $.trim($("#Giasp").val());
+        var Soluong = $.trim($("#Soluong").val());
+        var Diachi = $.trim($("#Diachi").val());
+        var Tinhtrang = $("#Tinhtrang").val();
+        var Thanhpho = $("#Thanhpho").val();
+		var validate = Validateform(Tepsp, Giasp, Soluong, Diachi);
 		if( validate){
             container_02.slideUp();
             container_03.slideDown();
+            $("#showTensp").text(Tepsp);
+            $("#showGiasp").text(Giasp);
+            $("#showSoluong").text(Soluong);
+            $("#showDiachi").text(Diachi);
+            if(Tinhtrang == "1"){
+                $("#showTinhtrang").text("Mới");
+            } else {
+                $("#showTinhtrang").text("Cũ");
+            }
+            switch (Thanhpho){
+                case "1":
+                    $("#showTinhthanh").text("TP Hồ Chí Minh");
+                    break;
+                case "2":
+                    $("#showTinhthanh").text("Hà Nội");
+                    break;
+                case "3":
+                    $("#showTinhthanh").text("Đồng Nai");
+                    break;
+                case "4":
+                    $("#showTinhthanh").text("Bình Dương");
+                    break;
+                case "5":
+                    $("#showTinhthanh").text("Lâm Đồng");
+                    break;
+                case "6":
+                    $("#showTinhthanh").text("Khánh Hòa");
+                    break;
+                case "7":
+                    $("#showTinhthanh").text("Cần Thơ");
+                    break;
+                case "":
+                    $("#showTinhthanh").text("");
+                    break;
+            }
 		}
     });
 
@@ -77,11 +118,7 @@ $(document).ready(function(){
     $(".container_03_next").click(function(){
 
     });
-    function Validateform() {
-		var Tepsp = $.trim($("#Tensp").val());
-		var Giasp = $.trim($("#Giasp").val());
-        var Soluong = $.trim($("#Soluong").val());
-        var Diachi = $.trim($("#Diachi").val());
+    function Validateform(Tepsp, Giasp, Soluong, Diachi) {
 
         var flag = true;
 
